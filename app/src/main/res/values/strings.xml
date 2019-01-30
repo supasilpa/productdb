@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Product2</string>
+    <string name="Product">brand</string>
+    <string-array name="brand_list">
+        <item>oppo</item>
+        <item>lenovo</item>
+        <item>LG</item>
+        <item>samsang</item>
+        <item>MI</item>
+        <item>apple</item>
+        <item>vivo</item>
+    </string-array>
+    <string name="type">Type</string>
+    <string-array name="types">
+        <item>new</item>
+        <item>used</item>
+
+    </string-array>
+</resources>
