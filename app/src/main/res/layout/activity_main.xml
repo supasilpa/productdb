@@ -1,7 +1,10 @@
-<LinearLayout android:layout_height="match_parent"
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_height="match_parent"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:background="#00aabb"
+    android:background="@drawable/bg"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <TextView
         android:layout_width="match_parent"
@@ -78,8 +81,19 @@
         android:layout_height="wrap_content"
         android:id="@+id/mob"/>
     <Button
+        android:layout_margin="15dp"
+
+        android:background="@drawable/buttonstyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/sub"
         android:text="Submit"/>
+    <Button
+        android:layout_margin="15dp"
+        android:background="@drawable/buttonstyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sea"
+        android:text="Search"/>
 </LinearLayout>
+</ScrollView>

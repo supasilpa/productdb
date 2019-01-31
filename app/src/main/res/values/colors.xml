@@ -3,4 +3,13 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="cicolor">#C779D0</color>
+    <color name="rcolor">#EECDA3</color>
+    <color name="recolor">#EF629F</color>
+    <color name="wadd">#4BC0C8</color>
+    <color name="wsub">#FFA17F</color>
+    <color name="wmult">#FDFC47</color>
+    <color name="wdiv">#24FE41</color>
+    <color name="col">#AA076B</color>
+    <color name="coll2">#61045F</color>
 </resources>
