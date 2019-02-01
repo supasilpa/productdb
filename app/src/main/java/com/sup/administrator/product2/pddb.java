@@ -64,4 +64,38 @@ public class pddb extends SQLiteOpenHelper {
         Cursor cur=sq.rawQuery("SELECT * FROM "+tablename+" WHERE "+col3+"='"+code+"'",null);
         return cur;
     }
+    public boolean update(String id,String model,String name,String sellername,String price,String ownername,String mobileno){
+        SQLiteDatabase sq=this.getWritableDatabase();
+        ContentValues cv=new ContentValues();
+        cv.put(col2,model);
+        cv.put(col4,name);
+        cv.put(col5,sellername);
+        cv.put(col6,price);
+        cv.put(col7,ownername);
+        cv.put(col8,mobileno);
+        long status=sq.update(tablename,cv,col1 + "=" +id,null);
+        if(status==-1)
+        {
+            return false;
+
+        }
+        else
+        {
+            return true;
+        }
+    }
+    public boolean delete(String id)
+    {
+        SQLiteDatabase sq=this.getWritableDatabase();
+        long status=sq.delete(tablename,col1+"="+id,null);
+        if(status==-1)
+        {
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+    }
+
 }
